@@ -694,6 +694,26 @@
 .rutinas .ob{
     font-size: 40px;
 }
+
+
+/* Estilo para los select */
+#edad, #objetivo {
+    font-size: 18px; /* Cambia este valor para ajustar el tamaño */
+    padding: 8px;
+    width: 100%; /* Ajusta el ancho si es necesario */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* Estilo para las opciones del select */
+#edad option, #objetivo option {
+    font-size: 18px; /* Cambia este valor para ajustar el tamaño */
+}
+
+
+
+
 /* Estilos para el formulario de login y registro */
 .login, .register {
     padding: 90px;

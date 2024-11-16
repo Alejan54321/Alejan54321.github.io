@@ -6,25 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
-    <title>THE GYM</title>
+    <title>THE BEST GYM</title>
 </head>
 <body>
     <div class="contenedor-header">
         <header>
             <h1><a href="index.html">THE BEST <span class="txtRojo">GYM</span></a></h1>
             <nav id="nav">
-                <a href="#inicio" onclick="seleccionar()">inicio</a>
-                <a href="#nosotros" onclick="seleccionar()">Nosotros</a>
-                <a href="#servicios" onclick="seleccionar()">Servicios</a>
-                <a href="#galeria" onclick="seleccionar()">Galería</a>
-                <a href="#equipo" onclick="seleccionar()">Equipo</a>
-                <a href="#contacto" onclick="seleccionar()">Contacto</a>
-                <a href="indexiniciosesion.html">Iniciar sesión o registrarse</a>
+                <a href="index.html" onclick="seleccionar()">inicio</a>
+                <a href="index.html" onclick="seleccionar()">Servicios</a>
+                <a href="index.html" onclick="seleccionar()">Nosotros</a>
+                <a href="index.html" onclick="seleccionar()">Galería</a>
+                <a href="index.html" onclick="seleccionar()">Contacto</a>
+                <a href="indexiniciosesion.html">Iniciar sesión</a>
             </nav>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.facebook.com/GymCrank?locale=es_LA"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/GymBodyFitness_"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/spinningcentergym?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-square-instagram"></i></a>
             </div>
             <!-- Icono del menu responsive -->
             <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -67,7 +66,7 @@
                 </select>
             </div>
             <div class="col">
-                <button onclick="generarRutina()">Generar Rutina</button>
+                <button onclick="generarRutina(event)">Generar Rutina</button>
             </div>
         </div>
 
@@ -77,25 +76,25 @@
 </section>
 
 
-    <footer>
-        <div class="info">
-            <p>2023 - <span class="txtRojo">THE GYM</span> Todos los derechos reservados</p>
-            <div class="redes">
-                <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-            </div>
+<footer>
+    <div class="info">
+        <p>2024 - <span class="txtRojo">THE BEST GYM</span> Todos los derechos reservados</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/GymCrank?locale=es_LA">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/GymBodyFitness_">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/spinningcentergym?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@GymTopz">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
         </div>
-    </footer>
+    </div>
+</footer>
     <script src="app.js"></script>
 </body>
 </html>
