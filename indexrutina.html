@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>THE GYM</title>
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <h1><a href="index.html">THE BEST <span class="txtRojo">GYM</span></a></h1>
+            <nav id="nav">
+                <a href="#inicio" onclick="seleccionar()">inicio</a>
+                <a href="#nosotros" onclick="seleccionar()">Nosotros</a>
+                <a href="#servicios" onclick="seleccionar()">Servicios</a>
+                <a href="#galeria" onclick="seleccionar()">Galería</a>
+                <a href="#equipo" onclick="seleccionar()">Equipo</a>
+                <a href="#contacto" onclick="seleccionar()">Contacto</a>
+                <a href="indexiniciosesion.html">Iniciar sesión o registrarse</a>
+            </nav>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>                
+        </header>
+    </div>
+
+    <!-- SECCIÓN DE RUTINAS -->
+<section class="rutinas" id="rutinas">
+    <div class="contenido-seccion">
+        <div class="contenedor-titulo">
+            <div class="numero">
+                07
+            </div>
+            <div class="info">
+                <span class="frase">PLANIFICA TU RUTINA</span>
+                <h1>ELIGE TU PLAN</h1>
+            </div>
+        </div>
+        
+        <!-- Formulario para seleccionar edad y tipo de entrenamiento -->
+        <div class="formulario-rutinas">
+            <div class="col">
+                <label class= "ed" for="edad">Selecciona tu rango de edad:</label>
+                <select id="edad">
+                    <option value="">Seleccione...</option>
+                    <option value="18-25">18-25 años</option>
+                    <option value="26-35">26-35 años</option>
+                    <option value="36-45">36-45 años</option>
+                    <option value="46+">46 años o más</option>
+                </select>
+            </div>
+            <div class="col">
+                <label class="ob" for="objetivo">Selecciona tu objetivo:</label>
+                <select id="objetivo">
+                    <option value="">Seleccione...</option>
+                    <option value="perder-peso">Bajar de peso</option>
+                    <option value="ganar-masa">Aumentar masa muscular</option>
+                </select>
+            </div>
+            <div class="col">
+                <button onclick="generarRutina()">Generar Rutina</button>
+            </div>
+        </div>
+
+        <!-- Contenedor donde se mostrarán las rutinas -->
+        <div class="resultado-rutinas" id="resultadoRutinas"></div>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="info">
+            <p>2023 - <span class="txtRojo">THE GYM</span> Todos los derechos reservados</p>
+            <div class="redes">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
